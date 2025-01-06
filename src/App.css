@@ -1,0 +1,53 @@
+#root {
+    width: 100%;
+    height: 100%;
+  text-align: center;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1px;
+}
+
+h1, h2, h3, label {
+  user-select: none;
+}
+
+h1 {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 1rem;
+  color: blue;
+}
+
+h3 {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 1rem;
+  color: gray;
+}
+
+p {
+  font-family: monospace;
+  color: gray;
+}
+
+label {
+  font-family: monospace;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+input {
+  padding-left: 2px;
+  padding-right: 2px;
+}
