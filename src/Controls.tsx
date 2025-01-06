@@ -232,6 +232,103 @@ export default function Controls() {
                                 onChange={(e) => setOuterShape({ ...outerShape, clearcoat: parseFloat(e.target.value) })}
                             />
                         </label>
+                        <label>Thickness: 
+                            <input
+                                type="number"
+                                min="0"
+                                max="10"
+                                step="0.1"
+                                value={outerShape.thickness || 0}
+                                onChange={(e) => setOuterShape({ ...outerShape, thickness: parseFloat(e.target.value) })}
+                            />
+                        </label>
+                        <label>Roughness: 
+                            <input
+                                type="number"
+                                min="0"
+                                max="1"
+                                step="0.01"
+                                value={outerShape.roughness || 0}
+                                onChange={(e) => setOuterShape({ ...outerShape, roughness: parseFloat(e.target.value) })}
+                            />
+                        </label>
+                        <label>Metalness: 
+                            <input
+                                type="number"
+                                min="0"
+                                max="1"
+                                step="0.01"
+                                value={outerShape.metalness || 0}
+                                onChange={(e) => setOuterShape({ ...outerShape, metalness: parseFloat(e.target.value) })}
+                            />
+                        </label>
+                        <label>Chromatic Aberration: 
+                            <input
+                                type="number"
+                                min="0"
+                                max="1"
+                                step="0.01"
+                                value={outerShape.chromaticAberration || 0}
+                                onChange={(e) => setOuterShape({ ...outerShape, chromaticAberration: parseFloat(e.target.value) })}
+                            />
+                        </label>
+                        <label>Anisotropy: 
+                            <input
+                                type="number"
+                                min="0"
+                                max="1"
+                                step="0.01"
+                                value={outerShape.anisotropy || 0}
+                                onChange={(e) => setOuterShape({ ...outerShape, anisotropy: parseFloat(e.target.value) })}
+                            />
+                        </label>
+                        <label>Reflectivity: 
+                            <input
+                                type="number"
+                                min="0"
+                                max="1"
+                                step="0.01"
+                                value={outerShape.reflectivity || 0}
+                                onChange={(e) => setOuterShape({ ...outerShape, reflectivity: parseFloat(e.target.value) })}
+                            />
+                        </label>
+                        <label>Clearcoat: 
+                            <input
+                                type="number"
+                                min="0"
+                                max="1"
+                                step="0.01"
+                                value={outerShape.clearcoat || 0}
+                                onChange={(e) => setOuterShape({ ...outerShape, clearcoat: parseFloat(e.target.value) })}
+                            />
+                        </label>
+                        <label>Clearcoat Roughness: 
+                            <input
+                                type="number"
+                                min="0"
+                                max="1"
+                                step="0.01"
+                                value={outerShape.clearcoatRoughness || 0}
+                                onChange={(e) => setOuterShape({ ...outerShape, clearcoatRoughness: parseFloat(e.target.value) })}
+                            />
+                        </label>
+                        <label>Attenuation Distance: 
+                            <input
+                                type="number"
+                                min="0"
+                                max="10"
+                                step="0.1"
+                                value={outerShape.attenuationDistance || 0}
+                                onChange={(e) => setOuterShape({ ...outerShape, attenuationDistance: parseFloat(e.target.value) })}
+                            />
+                        </label>
+                        <label>Attenuation Color: 
+                            <input
+                                type="color"
+                                value={outerShape.attenuationColor || "#ffffff"}
+                                onChange={(e) => setOuterShape({ ...outerShape, attenuationColor: e.target.value })}
+                            />
+                        </label>
                     </div>
                 )}
             </div>
